@@ -112,7 +112,7 @@ Smart contracts handle:
 Clone the repository
 
 
-git clone https://github.com/YOUR_USERNAME/ping2pay-avalanche.git
+git clone https://github.com/saurabhnage/ping2pay-avalanche.git
 
 
 Install dependencies
