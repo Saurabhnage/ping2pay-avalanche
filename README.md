@@ -134,16 +134,45 @@ Deploy smart contracts
 
 npx hardhat run scripts/deploy.js --network avalancheFuji
 
+---
+
+## 🎥 Demo Video
+
+Watch Ping2Pay in action:
+
+[![Ping2Pay Demo](https://img.youtube.com/vi/u8gf4m2qPBc/0.jpg)](https://youtu.be/u8gf4m2qPBc)
+
+https://youtu.be/u8gf4m2qPBc
+
+### Ping2Pay Demo
+
+This demo showcases Ping2Pay — a chat-native crypto payment system that enables users to send and receive AVAX through WhatsApp commands.
+
+Example commands demonstrated:
+
+help  
+wallet  
+balance  
+deposit 0.01  
+send 0.001 to +919XXXXXXXXX
+
+The backend processes the command, maps the phone number to a wallet, signs the transaction and executes it on Avalanche Fuji Testnet.
 
 ---
 
-## Example Commands
+### Ping2Pay Demo
 
-help
-wallet
-balance
-deposit 0.01
+This demo showcases Ping2Pay — a chat-native crypto payment system that enables users to send and receive AVAX through WhatsApp commands.
+
+Example commands demonstrated:
+
+help  
+wallet  
+balance  
+deposit 0.01  
 send 0.001 to +919XXXXXXXXX
+
+The backend processes the command, maps the phone number to a wallet, signs the transaction, and executes it on Avalanche Fuji Testnet.
 
 ---
 
