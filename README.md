@@ -1,3 +1,8 @@
+![Avalanche](https://img.shields.io/badge/Built%20on-Avalanche-red)
+![Solidity](https://img.shields.io/badge/Solidity-Smart%20Contracts-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 # Ping2Pay
 
 Chat-native crypto payments built on Avalanche.
