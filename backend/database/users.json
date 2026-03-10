@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "phone": "919106776717@c.us",
+      "address": "0x8899b16Fa225bcE3dd0c17B18Bc54A071C482Abb",
+      "privateKey": "0x375d78ba6081283f86ad3d68e017b1d268a19ebf6bdcce9659604957ce5cde26"
+    },
+    {
+      "phone": "status@broadcast",
+      "address": "0xAB70A4E87F2A16b6Cb5c19d3Dea4A6e9eF543e9a",
+      "privateKey": "0x7ba685f47bfc35ed9d4385e5a3bfa731e92851e4231803d1d7294afd2a5fda7f"
+    }
+  ]
+}

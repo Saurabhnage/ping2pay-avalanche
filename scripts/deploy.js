@@ -1,3 +1,6 @@
+import pkg from "hardhat";
+const { ethers } = pkg;
+
 async function main() {
 
   const Ping2Pay = await ethers.getContractFactory("Ping2PayEscrow");
