@@ -199,6 +199,45 @@ npx hardhat run scripts/deploy.js --network avalancheFuji
 
 ---
 
+## Why Ping2Pay Matters
+
+Crypto infrastructure has matured significantly over the last decade.
+However, **usability remains the biggest barrier to mass adoption**.
+
+Today, most users must:
+
+* Install wallet applications
+* Manage seed phrases
+* Understand gas fees
+* Navigate complex interfaces
+
+For billions of people, these steps create friction that prevents them from ever using crypto.
+
+At the same time, messaging platforms like **WhatsApp, Telegram, and WeChat already serve billions of users globally** and are deeply embedded in everyday communication.
+
+Ping2Pay flips the traditional approach.
+
+Instead of asking users to learn new tools, **Ping2Pay brings crypto directly into platforms people already use**.
+
+Sending crypto becomes as simple as sending a message:
+
+```
+send 10 USDT to Rahul
+```
+
+Behind the scenes, Ping2Pay handles:
+
+* Wallet creation
+* Transaction signing
+* Blockchain settlement
+* Confirmation delivery
+
+This model has the potential to unlock **the next billion crypto users**, transforming messaging platforms into global financial rails.
+
+Ping2Pay is not just a payment tool — it is a step toward **chat-native financial infrastructure**.
+
+---
+
 ## Vision
 
 Mass adoption of crypto will not happen through new apps.
