@@ -97,13 +97,15 @@ Send 5 USDT to Rahul
 
 ---
 
-## Smart Contracts
+## Smart Contract
 
-Smart contracts handle:
+Network: Avalanche Fuji Testnet
 
-- escrow payments
-- transaction recording
-- future programmable payments
+Contract Address:
+0x6C37935C4e791a996a93e0Daa8126CA8174057b0
+
+Explorer:
+https://testnet.snowtrace.io/address/0x6C37935C4e791a996a93e0Daa8126CA8174057b0
 
 ---
 
@@ -132,6 +134,16 @@ Deploy smart contracts
 
 npx hardhat run scripts/deploy.js --network avalancheFuji
 
+
+---
+
+## Example Commands
+
+help
+wallet
+balance
+deposit 0.01
+send 0.001 to +919XXXXXXXXX
 
 ---
 
