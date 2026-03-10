@@ -1,8 +1,10 @@
 # Ping2Pay
 
-Ping2Pay is a chat-native crypto payment system built on Avalanche that enables users to send and receive tokens directly through messaging platforms like WhatsApp and Telegram.
+Chat-native crypto payments built on Avalanche.
 
-Instead of asking users to download wallet apps or manage seed phrases, Ping2Pay integrates crypto payments into chat interfaces where billions of users already communicate daily.
+Ping2Pay enables users to send and receive crypto directly through messaging platforms like **WhatsApp and Telegram**.
+
+Instead of asking users to download wallets, manage seed phrases, or learn complex interfaces, Ping2Pay allows users to send crypto as easily as sending a message.
 
 ---
 
@@ -11,12 +13,13 @@ Instead of asking users to download wallet apps or manage seed phrases, Ping2Pay
 Crypto payments remain difficult for everyday users.
 
 Traditional wallets require:
-- seed phrase management
-- complex UI flows
-- gas fee understanding
-- technical knowledge
 
-This creates friction that prevents mainstream adoption.
+* Seed phrase management
+* Complex UI flows
+* Gas fee understanding
+* Technical knowledge
+
+These barriers prevent mainstream crypto adoption.
 
 ---
 
@@ -26,49 +29,31 @@ Ping2Pay abstracts blockchain complexity behind messaging interfaces.
 
 Users simply send messages like:
 
-
-Send 10 USDT to Rahul
-
+```
+send 10 USDT to Rahul
+```
 
 Ping2Pay processes the request and executes the transaction on-chain.
+
+The blockchain handles the settlement.
+The user experiences simple messaging.
 
 ---
 
 ## Key Features
 
-- Chat-based crypto payments
-- Phone-number linked wallets
-- Avalanche blockchain settlement
-- Simple conversational commands
-- No wallet installation required
-
----
-
-## Tech Stack
-
-Blockchain
-- Avalanche C-Chain
-- Solidity Smart Contracts
-- Hardhat
-
-Backend
-- Node.js
-- Express
-- Ethers.js
-
-Messaging
-- Telegram Bot API
-- WhatsApp Business API (planned)
-
-Infrastructure
-- RPC Providers
-- Cloud deployment
+* Chat-based crypto payments
+* Phone-number linked wallets
+* Avalanche blockchain settlement
+* Conversational payment commands
+* No wallet installation required
+* Automatic wallet creation
 
 ---
 
 ## Architecture
 
-Ping2Pay has five core components:
+Ping2Pay consists of five core components:
 
 1. Messaging Interface
 2. Chat Processing Engine
@@ -76,36 +61,102 @@ Ping2Pay has five core components:
 4. Blockchain Interaction Layer
 5. Notification System
 
-Full architecture is documented in `/docs/architecture.md`.
+Architecture Diagram:
+
+![Architecture](docs/architecture.png)
+
+Payment Flow:
+
+![Payment Flow](docs/flow.png)
 
 ---
 
 ## How It Works
 
-1. User opens WhatsApp or Telegram.
-2. User starts chat with Ping2Pay bot.
-3. Wallet is automatically generated.
-4. User sends command:
+1. User opens **WhatsApp or Telegram**
+2. User starts a chat with the Ping2Pay bot
+3. A wallet is automatically generated for the user
+4. User sends a command:
 
+```
+send 5 AVAX to Rahul
+```
 
-Send 5 USDT to Rahul
+5. Backend parses the request
+6. Transaction is signed and broadcast to Avalanche
+7. Confirmation is returned in chat
 
+---
 
-5. Backend parses the request.
-6. Transaction is signed and broadcast to Avalanche.
-7. Confirmation is sent in chat.
+## Example Commands
+
+```
+help
+wallet
+balance
+deposit 0.01
+send 0.001 to +919XXXXXXXXX
+```
+
+---
+
+## Tech Stack
+
+### Blockchain
+
+* Avalanche C-Chain
+* Solidity Smart Contracts
+* Hardhat
+
+### Backend
+
+* Node.js
+* Express
+* Ethers.js
+
+### Messaging
+
+* whatsapp-web.js
+* Telegram Bot API
+
+### Infrastructure
+
+* RPC Providers
+* Cloud Deployment
 
 ---
 
 ## Smart Contract
 
-Network: Avalanche Fuji Testnet
+Network: **Avalanche Fuji Testnet**
 
-Contract Address:
+Contract Address
+
+```
 0x6C37935C4e791a996a93e0Daa8126CA8174057b0
+```
 
-Explorer:
+Snowtrace Explorer
+
 https://testnet.snowtrace.io/address/0x6C37935C4e791a996a93e0Daa8126CA8174057b0
+
+---
+
+## Demo
+
+Bot Screenshot
+
+![Demo](docs/demo.png)
+
+---
+
+## Demo Video
+
+Watch Ping2Pay in action:
+
+[![Ping2Pay Demo](https://img.youtube.com/vi/u8gf4m2qPBc/0.jpg)](https://youtu.be/u8gf4m2qPBc)
+
+This demo shows Ping2Pay executing crypto payments directly through WhatsApp commands.
 
 ---
 
@@ -113,76 +164,38 @@ https://testnet.snowtrace.io/address/0x6C37935C4e791a996a93e0Daa8126CA8174057b0
 
 Clone the repository
 
-
+```
 git clone https://github.com/saurabhnage/ping2pay-avalanche.git
-
+```
 
 Install dependencies
 
-
+```
 npm install
-
+```
 
 Run backend
 
-
+```
 node backend/index.js
-
+```
 
 Deploy smart contracts
 
-
+```
 npx hardhat run scripts/deploy.js --network avalancheFuji
-
----
-
-## 🎥 Demo Video
-
-Watch Ping2Pay in action:
-
-[![Ping2Pay Demo](https://img.youtube.com/vi/u8gf4m2qPBc/0.jpg)](https://youtu.be/u8gf4m2qPBc)
-
-https://youtu.be/u8gf4m2qPBc
-
-### Ping2Pay Demo
-
-This demo showcases Ping2Pay — a chat-native crypto payment system that enables users to send and receive AVAX through WhatsApp commands.
-
-Example commands demonstrated:
-
-help  
-wallet  
-balance  
-deposit 0.01  
-send 0.001 to +919XXXXXXXXX
-
-The backend processes the command, maps the phone number to a wallet, signs the transaction and executes it on Avalanche Fuji Testnet.
-
----
-
-### Ping2Pay Demo
-
-This demo showcases Ping2Pay — a chat-native crypto payment system that enables users to send and receive AVAX through WhatsApp commands.
-
-Example commands demonstrated:
-
-help  
-wallet  
-balance  
-deposit 0.01  
-send 0.001 to +919XXXXXXXXX
-
-The backend processes the command, maps the phone number to a wallet, signs the transaction, and executes it on Avalanche Fuji Testnet.
+```
 
 ---
 
 ## Future Roadmap
 
-- WhatsApp Business API integration
-- Stablecoin support (USDT)
-- Escrow payments
-- Merchant payment support
-- Multi-chain compatibility
+* WhatsApp Business API integration
+* Stablecoin support (USDT / USDC)
+* Escrow smart contracts
+* Merchant payment system
+* Multi-chain compatibility
+* Gasless transactions
 
 ---
 
@@ -192,7 +205,7 @@ Mass adoption of crypto will not happen through new apps.
 
 It will happen when crypto integrates into platforms people already use.
 
-Ping2Pay brings crypto payments into everyday conversations.
+Ping2Pay brings crypto payments directly into everyday conversations.
 
 ---
 
